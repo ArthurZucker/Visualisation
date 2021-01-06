@@ -32,7 +32,21 @@ Extract selection directly on the 3D, not on the surface
 Applied two clip plan filters, but don't know how to handle the color map 
 ## Question 14 
 Appplied :
-- treshold filter
+- treshold filter : 91->100
 - iso volum to extract the bottom part
 ## Question 15 
+Took different isovalues
+
+# Part 3
+## Question 16 
+Applied 3 iso thresholds
+## Question 17 
+Changed the color map 
+
+# Part 4
+## Question 18
+- Compute derivatives, coloring vorticity, Z
+- Added two points to extend the colors : ![colormap](colorMap.png)
+## Question 19
+
 
