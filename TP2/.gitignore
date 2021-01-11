@@ -1,0 +1,6 @@
+./CMakeFiles
+./Build
+./.vscode
+cmake_install.cmake
+CMakeCache.txt
+IsoSurface
