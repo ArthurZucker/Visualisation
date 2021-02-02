@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.19.1/bin/cmake
+CMAKE_COMMAND = /snap/cmake/775/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.19.1/bin/cmake -E rm -f
+RM = /snap/cmake/775/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/arthur/Travail/Polytech/MAIN5/Visualisation/TP2
+CMAKE_SOURCE_DIR = /home/arthur/Travail/Visualisation/TP2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/arthur/Travail/Polytech/MAIN5/Visualisation/TP2/build
+CMAKE_BINARY_DIR = /home/arthur/Travail/Visualisation/TP2/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/IsoSurface.dir/clean
 CMakeFiles/IsoSurface.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IsoSurface.dir/build.make CMakeFiles/IsoSurface.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IsoSurface.dir/build.make CMakeFiles/IsoSurface.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/arthur/Travail/Polytech/MAIN5/Visualisation/TP2/build/CMakeFiles --progress-num=1,2 "Built target IsoSurface"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arthur/Travail/Visualisation/TP2/build/CMakeFiles --progress-num=1,2,3 "Built target IsoSurface"
 .PHONY : CMakeFiles/IsoSurface.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/IsoSurface.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/arthur/Travail/Polytech/MAIN5/Visualisation/TP2/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arthur/Travail/Visualisation/TP2/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/IsoSurface.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/arthur/Travail/Polytech/MAIN5/Visualisation/TP2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arthur/Travail/Visualisation/TP2/build/CMakeFiles 0
 .PHONY : CMakeFiles/IsoSurface.dir/rule
 
 # Convenience name for target.
