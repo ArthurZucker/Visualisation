@@ -1,0 +1,6 @@
+data-2/
+*.vtu 
+*.vti
+TP2/build/
+TP2/CMakeFiles/
+
