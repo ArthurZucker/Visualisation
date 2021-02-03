@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.19.1/bin/cmake
+CMAKE_COMMAND = /snap/cmake/743/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.19.1/bin/cmake -E rm -f
+RM = /snap/cmake/743/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/arthur/Travail/Polytech/MAIN5/Visualisation/TP2
+CMAKE_SOURCE_DIR = /home/arthur/Travail/Visualisation/TP2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/arthur/Travail/Polytech/MAIN5/Visualisation/TP2
+CMAKE_BINARY_DIR = /home/arthur/Travail/Visualisation/TP2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = /Users/arthur/Travail/Polytech/MAIN5/Visualisation/TP2
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.19.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/743/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -89,7 +89,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.19.1/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/743/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/arthur/Travail/Polytech/MAIN5/Visualisation/TP2/CMakeFiles /Users/arthur/Travail/Polytech/MAIN5/Visualisation/TP2//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arthur/Travail/Visualisation/TP2/CMakeFiles /home/arthur/Travail/Visualisation/TP2//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/arthur/Travail/Polytech/MAIN5/Visualisation/TP2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arthur/Travail/Visualisation/TP2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -169,6 +169,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IsoSurface.dir/build.make CMakeFiles/IsoSurface.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sources/CustomInteractor.o: sources/CustomInteractor.cpp.o
+
+.PHONY : sources/CustomInteractor.o
+
+# target to build an object file
+sources/CustomInteractor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IsoSurface.dir/build.make CMakeFiles/IsoSurface.dir/sources/CustomInteractor.cpp.o
+.PHONY : sources/CustomInteractor.cpp.o
+
+sources/CustomInteractor.i: sources/CustomInteractor.cpp.i
+
+.PHONY : sources/CustomInteractor.i
+
+# target to preprocess a source file
+sources/CustomInteractor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IsoSurface.dir/build.make CMakeFiles/IsoSurface.dir/sources/CustomInteractor.cpp.i
+.PHONY : sources/CustomInteractor.cpp.i
+
+sources/CustomInteractor.s: sources/CustomInteractor.cpp.s
+
+.PHONY : sources/CustomInteractor.s
+
+# target to generate assembly for a file
+sources/CustomInteractor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IsoSurface.dir/build.make CMakeFiles/IsoSurface.dir/sources/CustomInteractor.cpp.s
+.PHONY : sources/CustomInteractor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -181,6 +208,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sources/CustomInteractor.o"
+	@echo "... sources/CustomInteractor.i"
+	@echo "... sources/CustomInteractor.s"
 .PHONY : help
 
 

@@ -6,8 +6,12 @@ include_directories(".")
 
 include(${VTK_USE_FILE})
 
+file(GLOB SOURCES
+	sources/*.hpp
+	sources/*.cpp)
+
 add_executable(IsoSurface
-main.cpp)	
+main.cpp ${SOURCES})	
 
 set_target_properties(IsoSurface
 	PROPERTIES

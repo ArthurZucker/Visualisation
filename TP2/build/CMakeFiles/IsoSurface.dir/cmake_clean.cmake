@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/IsoSurface.dir/main.cpp.o"
+  "CMakeFiles/IsoSurface.dir/sources/CustomInteractor.cpp.o"
   "IsoSurface"
   "IsoSurface.pdb"
 )
